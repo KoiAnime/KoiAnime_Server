@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("KoiAnime_Server")]
+[assembly: AssemblyTitle("KoiAnime_REST_Server")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KoiAnime_Server")]
+[assembly: AssemblyProduct("KoiAnime_REST_Server")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("2c8fee8c-1a5a-4338-bc5e-b4634c727ba6")]
+[assembly: Guid("46ec231d-e91c-45b2-b586-6e9cb0296b7b")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
