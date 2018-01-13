@@ -52,9 +52,9 @@ namespace KoiAnime_REST_Server
             string json = null;
             try
             {
-                for (int i = 0; i <= dt.Rows.Count; i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    Title t = new Title((koianimeDataSet.titlesRow)dt.Rows[i], "Gallery");
+                    Title t = new Title((koianimeDataSet.titlesRow)dt.Rows[i], "TopRated");
                     lisTitles.Add(t);
                     json = JsonConvert.SerializeObject(lisTitles);
                 }

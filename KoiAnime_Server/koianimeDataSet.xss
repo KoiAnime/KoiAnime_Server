@@ -9,7 +9,7 @@
     <Shape ID="DesignTable:account" ZOrder="6" X="607" Y="70" Height="229" Width="281" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="159" />
     <Shape ID="DesignTable:account_titles" ZOrder="13" X="313" Y="70" Height="134" Width="224" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
     <Shape ID="DesignTable:appconf" ZOrder="5" X="936" Y="77" Height="134" Width="192" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
-    <Shape ID="DesignTable:title_category" ZOrder="12" X="313" Y="592" Height="115" Width="224" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
+    <Shape ID="DesignTable:title_category" ZOrder="12" X="276" Y="589" Height="115" Width="224" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:title_chapters" ZOrder="1" X="340" Y="297" Height="172" Width="222" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:titles" ZOrder="11" X="70" Y="70" Height="286" Width="202" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="197" />
     <Shape ID="DesignTable:title_seasons" ZOrder="4" X="801" Y="494" Height="153" Width="217" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
@@ -54,12 +54,12 @@
     <Connector ID="DesignRelation:fk_category_id" ZOrder="7" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>313</X>
-          <Y>609</Y>
+          <X>276</X>
+          <Y>606</Y>
         </Point>
         <Point>
           <X>218</X>
-          <Y>609</Y>
+          <Y>606</Y>
         </Point>
         <Point>
           <X>218</X>
@@ -70,11 +70,11 @@
     <Connector ID="DesignRelation:fk_season_chapter_id" ZOrder="3" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>520</X>
-          <Y>592</Y>
+          <X>483</X>
+          <Y>589</Y>
         </Point>
         <Point>
-          <X>520</X>
+          <X>483</X>
           <Y>573</Y>
         </Point>
         <Point>
