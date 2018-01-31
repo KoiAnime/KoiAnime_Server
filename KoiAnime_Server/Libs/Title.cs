@@ -16,18 +16,18 @@ namespace KoiAnime_REST_Server.Libs
         public int TitleState { get; set; }
         public long TitleViews { get; set; }
 
-        public Title(koianimeDataSet.titlesRow row, string windowCategory)
+        public Title(koianimeDataSet.titleRow row, string windowCategory)
         {
             WindowCategory = windowCategory;
             TitleId = row.id;
-            TitleName = row.title;
-            TitleCategory = row.category;
-            TitleDescription = row.description;
-            TitleNumberChapters = row.num_chapters;
-            TitleStartDateTime = row.start_date;
-            TitleCoverImg = row.cover_img;
+            TitleName = row.title_name;
+            TitleCategory = row.title_category;
+            TitleDescription = row.title_description;
+            TitleNumberChapters = row.title_number_chapters;
+            TitleStartDateTime = row.title_start_time;
+            TitleCoverImg = row.title_cover_img;
             TitleState = row.title_state;
-            TitleViews = row.views;
+            TitleViews = row.title_views;
         }
 
         public string GetWindowCategory()

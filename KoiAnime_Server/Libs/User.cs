@@ -15,7 +15,7 @@ namespace KoiAnime_REST_Server.Libs
             username = accountRow.username;
             password = accountRow.password;
             email = accountRow.email;
-            date = accountRow.start_date_account;
+            date = accountRow.account_start_date;
         }
 
         public User(string user,string passwrd,string mail,DateTime dateTime)

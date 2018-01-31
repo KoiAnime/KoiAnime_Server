@@ -23,16 +23,15 @@ namespace KoiAnime_REST_Server.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;persistsecurityinfo=True;database=koianime")]
         public string koianimeConnectionString {
             get {
                 return ((string)(this["koianimeConnectionString"]));
             }
-            set {
-                this["koianimeConnectionString"] = value;
-            }
+            set { this.koianimeConnectionString = value; }
         }
     }
 }

@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Grapevine.Server;
+using Unosquare.Labs.EmbedIO;
+using Unosquare.Labs.EmbedIO.Modules;
 
 namespace KoiAnime_REST_Server
 {
@@ -13,11 +16,10 @@ namespace KoiAnime_REST_Server
         static void Main(string[] args)
         {
             CreateLoadConfig();
+            
             using (var server = new RestServer(LoadSettings()))
-            {   
-                server.LogToConsole().Start();
-                Console.ReadLine();
-                server.Stop();
+            {
+                server.Start();
             }
         }
 
@@ -68,9 +70,11 @@ namespace KoiAnime_REST_Server
                 config["DATABASE"]["DatabaseName"].StringValue = databasename;
                 config.SaveToFile(Directory.GetCurrentDirectory() + "\\KoiAnime_Server.cfg");
                 Properties.Settings.Default.koianimeConnectionString = "server=" + dbServerip + ";" + "user id=" + username + ";" + "persistsecurityinfo=False;" + "database=" + databasename + ";" + "password=" + password;
+
                 Console.Clear();
             }
 
         }
+
     }
 }

@@ -27,7 +27,7 @@ namespace KoiAnime_REST_Server.RestResources
             var password = context.Request.QueryString["password"];
             var email = context.Request.QueryString["email"];
 
-            accountTableAdapter.Insert(username, password, email, 0, 0, DateTime.Now);
+            accountTableAdapter.Insert(username, password, email, DateTime.Now);
 
             context.Response.SendResponse(Encoding.UTF8.GetBytes(""));
             return context;

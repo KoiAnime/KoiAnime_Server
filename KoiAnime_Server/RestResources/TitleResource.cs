@@ -17,7 +17,7 @@ namespace KoiAnime_REST_Server
     [RestResource]
     public class TitleResource
     {
-        private koianimeDataSetTableAdapters.titlesTableAdapter titlesTable = new titlesTableAdapter();
+        private koianimeDataSetTableAdapters.titleTableAdapter titlesTable = new titleTableAdapter();
 
         [RestRoute(PathInfo = "/Gallery")]
         public IHttpContext Gallery(IHttpContext context)
@@ -29,7 +29,7 @@ namespace KoiAnime_REST_Server
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    Title t = new Title((koianimeDataSet.titlesRow)dt.Rows[i], "Gallery");
+                    Title t = new Title((koianimeDataSet.titleRow)dt.Rows[i], "Gallery");
                     lisTitles.Add(t);
                     json = JsonConvert.SerializeObject(lisTitles);
                 }
@@ -54,7 +54,7 @@ namespace KoiAnime_REST_Server
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    Title t = new Title((koianimeDataSet.titlesRow)dt.Rows[i], "TopRated");
+                    Title t = new Title((koianimeDataSet.titleRow)dt.Rows[i], "TopRated");
                     lisTitles.Add(t);
                     json = JsonConvert.SerializeObject(lisTitles);
                 }
@@ -78,7 +78,7 @@ namespace KoiAnime_REST_Server
 
             try
             {
-                Title t = new Title((koianimeDataSet.titlesRow)dt.Rows[0], "Gallery");
+                Title t = new Title((koianimeDataSet.titleRow)dt.Rows[0], "Gallery");
                 json = JsonConvert.SerializeObject(t);
             }
             catch (Exception e)
